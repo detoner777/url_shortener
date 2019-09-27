@@ -1,0 +1,6 @@
+POST http://localhost:5000/api/url/shorten
+Content-Type: application/json
+
+{
+	"longUrl": "https://www.amazon.com/Apple-iPhone-64GB-Silver-Verizon/dp/B07QZ4W4BM/ref=lp_18637575011_1_2?srs=18637575011&ie=UTF8&qid=1569596901&sr=8-2"
+}
