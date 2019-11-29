@@ -69,7 +69,7 @@ export class Header extends Component {
 
               <NavItem>
                 <a
-                  href="http://fromgaming.com/"
+                  href="https://www.youtube.com/"
                   target="_blank"
                   to="/contact-us"
                   className="padded-nav"
