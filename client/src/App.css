@@ -143,6 +143,44 @@ li a:hover {
   color:#707a80;
 }
 
+/*-----------------------------------------ending---------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+.ending {
+  background-image: url("http://static1.squarespace.com/static/58e7d7e01b10e3b4eda96a36/58e8a816b8a79b774a11ba97/59a3e58759cc68ef43e816bf/1503929358279/Mylla-Norway-Forest-Woods-Cabins-12-%C2%A92017-Bj%C3%B8rn-Stange-Ankre%2C-All-Rights-Reserved-www.bjornankre.com.jpg?format=1500w");
+  height:fit-content;
+  min-height:200px;
+  overflow:hidden; 
+  width:100%;
+  background-position: center !important;
+  background-repeat:no-repeat;
+  background-size:cover;
+  color:white;
+  text-align:center;
+  padding:60px 0px 60px 0px;
+}
+
+.quantifiable {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.quantifiable h2 {
+  font-size:50px;
+  margin:auto;
+  letter-spacing:2px;
+  padding-top:40px;
+}
+
+.ending-h3 {  
+  font-size:25px;
+  letter-spacing:2px;
+  font-weight:600;
+  margin-top:10px;
+  padding-bottom:40px !important;
+  margin-bottom:0px;
+}
+
 
 /*-----------------------------------------footer---------------------------------------------------------------------------*/
 
@@ -185,7 +223,7 @@ li a:hover {
 .heading {
   text-align:center;  
   margin-top:48px;
-  background-image: url(./about-back.jpg);
+  background-image: url('https://images.unsplash.com/photo-1550643339-dd04b51d5be7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
   height:500px;
   overflow:hidden; 
   width:100%;
@@ -202,7 +240,7 @@ li a:hover {
 
 @media only screen and (max-width: 500px) {
   .heading {    
-  	background-image: url(./about-back-mobile.jpg);
+  	background-image: url('https://images.unsplash.com/photo-1550643339-dd04b51d5be7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
   	background-attachment:scroll;
   }
 }
@@ -349,4 +387,5 @@ li a:hover {
 }
 
 .logistics .ending {
-  background-image: url(./about-end.jpg);
+  background-image: url('https://i.pinimg.com/originals/07/a0/04/07a004693598ddf07b4ae2a7da6501d5.jpg');
+}
