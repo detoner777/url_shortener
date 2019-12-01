@@ -9,6 +9,7 @@ import {
   Collapse,
   NavbarToggler
 } from "reactstrap";
+import logo from "../img/logo.png";
 
 export class Header extends Component {
   constructor(props) {
@@ -40,10 +41,18 @@ export class Header extends Component {
         <Navbar id="white-nav" color="light" light expand="md">
           <NavbarBrand href="/" className="mr-auto">
             <Link to="/">
-              <img
-                style={{ width: "90px" }}
-                src="https://clipart.info/images/ccovers/1495749358batman-logo-3d-png-clip-art.png"
-              />
+              {/* <img style={{ width: "50px", height: "auto" , color: 'green'}} src={logo} /> */}
+              <h5
+                className="scoro"
+                style={{
+                  width: "100%",
+                  height: "22px",
+                  color: "green",
+                  paddingTop: "3px"
+                }}
+              >
+                СКОРОЧУВАЧ
+              </h5>
             </Link>
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} className="mr-2" />

@@ -22,7 +22,13 @@ html {
 #white-nav {
   background-color:white !important;
   border-bottom:1px solid gray;
+  color: red;
 }
+
+.img {
+  
+}
+
 
 .collapse ul {
   background-color:white;
@@ -100,6 +106,118 @@ li a:hover {
   }
 }
 
+/*-------------------------------------------Home-------------------------------------------------------------------------------*/
+
+.main {
+  margin-top:48px;
+  background-image: url(./img/Norway-Forest.jpg);
+  height:500px;
+  overflow:hidden; 
+  width:100%;
+  background-position: center !important;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .main {
+    background-attachment: scroll;
+  }
+}
+
+.statement h1 {
+  display:block;
+  text-align:center;
+  font-size:calc(20px + 2vw);
+  margin:auto;
+  font-weight:400;
+  letter-spacing:2px;
+  margin-top:-30px;
+  margin-left:auto;
+  margin-right:auto;
+  max-width:800px;
+  color:white;
+}
+
+.main .btn-holder {
+  margin-top:40px;
+  margin-left:auto;
+  margin-right:auto;
+  width:fit-content;
+}
+
+/*holds the form*/
+.form-container {
+  width:90%;
+  max-width:800px;
+  margin-top:30px;
+}
+
+/*is the bootstrap Form*/
+#url-form {
+  position:relative;
+}
+
+/*is the bootstrap Input inside the Form*/
+#url-input {
+  width:100%;
+  height:50px;  
+  border-radius: .25rem;
+  font-size:16px;
+  position:relative;
+}
+
+/*is the bootstrap Button inside the Form*/
+#inline-button {
+  height:50px;
+  border-radius: 0 .25rem .25rem 0;
+  background-color:#ff6700;
+  border-color:#ff6700;
+  font-size:14px;
+  position:absolute;
+  top:0;
+  right:0;
+  z-index:4;
+}
+
+/*conditionally rendered result box container for shortened URL*/
+.result-container {
+  margin-top:100px;
+  align-self:center;
+  position:absolute;
+  text-align:center;
+  max-width:95%;
+}
+
+@media only screen and (max-width: 438px) {
+  /*adjust margin for when statement takes 2 lines*/
+  .result-container {
+    margin-top:113px;
+  }
+}
+
+/*conditionally rendered result box for shortened URL*/
+.result-text {
+ /* background-color: rgba(0, 123, 255, 0.3);*/
+  text-align:center;
+  color:white;
+  margin-bottom:5px;
+  padding:5px;
+  border-radius:10px;
+  letter-spacing:2px;
+  font-size:18px;
+  font-weight:500;
+}
+
+.popover {
+  z-index:4 !important;
+}
+
 
 /*-----------------------------------------description----------------------------------------------------------------------*/
 
@@ -143,8 +261,57 @@ li a:hover {
   color:#707a80;
 }
 
+/*-----------------------------------------frame----------------------------------------------------------------------------*/
+
+.frame-frame {
+  width:95%;
+  max-width:700px;
+  margin:90px auto;
+}
+
+.frame-div {/*
+  text-align: center;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 
+  padding-top: 0px;
+  max-width:700px;
+  max-height:394px;
+  display:border-box;
+  margin-left:auto;
+  margin-right:auto;*/
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.frame-div iframe {/*
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+.btn-holder {
+  margin:80px auto;
+  width:fit-content;
+}
+
+.orange-button {
+  background-color:#ff6700 !important;
+  border-color:#ff6700 !important;
+}
+
+
 /*-----------------------------------------ending---------------------------------------------------------------------------*/
-/*--------------------------------------------------------------------------------------------------------------------------*/
+
 
 .ending {
   background-image: url("http://static1.squarespace.com/static/58e7d7e01b10e3b4eda96a36/58e8a816b8a79b774a11ba97/59a3e58759cc68ef43e816bf/1503929358279/Mylla-Norway-Forest-Woods-Cabins-12-%C2%A92017-Bj%C3%B8rn-Stange-Ankre%2C-All-Rights-Reserved-www.bjornankre.com.jpg?format=1500w");
@@ -388,4 +555,17 @@ li a:hover {
 
 .logistics .ending {
   background-image: url('https://i.pinimg.com/originals/07/a0/04/07a004693598ddf07b4ae2a7da6501d5.jpg');
+}
+
+
+/*--------media q-------*/
+@media only screen and (min-width: 767px) {
+  ul {
+    background-color:#f8f9fa;
+    padding:0px;
+  }
+
+  li a{
+    color:black !important;
+  }
 }
